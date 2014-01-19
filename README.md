@@ -3,7 +3,7 @@ CPU Status Display
 
 This repository contains a Python script which gathers data and sends it to a connected [Arduino](http://arduino.cc/en/Main/arduinoBoardUno) which then displays the data on a [16x2 LCD display](https://www.sparkfun.com/products/709). I am using it to display information about my computer but it could easily be adapted to display any text based information gatherable from python, for instance the weather, share prices or whether you have unread emails.
 
-<img src="example.jpg" alt="The display in action" style="width: 350px;"/>
+<img src="example.jpg" alt="The display in action" width=350/>
 
 The Arduino sketch receives data from the PC over serial and then prints it to the screen. Each line of text *begins* with a newline character and then a single one of `T`,`B`,`U`,`D` specifying which line is to be updated
  * `T` - update the top line.
